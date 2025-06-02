@@ -7,13 +7,14 @@ import Focus from './components/Focus'
 import Keyboard from './components/Keyboard'
 import DateAndTime from './components/DateAndTime'
 import SubmitDetails from './components/SubmitDetails'
+import Expression from './components/Expression'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <SubmitDetails/>
+    {/* <SubmitDetails/> */}
       {/* <Navbar/>
       <Mode/>
       <Badboy/>
@@ -21,6 +22,8 @@ function App() {
       <Focus/>
       <Keyboard/>
       <DateAndTime/> */}
+      <Expression/>
+
       
     </>
   )
