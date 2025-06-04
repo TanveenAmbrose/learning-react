@@ -15,21 +15,17 @@ function App() {
 
   return (
     <>
-    {/* <SubmitDetails/> */}
-      {/* <Navbar/>
-      <Mode/>
-      <Badboy/>
-      <Clickboard/>
-      <Focus/>
-      <Keyboard/>
-      <DateAndTime/> */}
-      {/* <Expression/> */}
-
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Navbar/>}></Route>
           <Route path='/mode' element={<Mode/>}></Route>
           <Route path='/DateAndTime' element={<DateAndTime/>}></Route>
+          <Route path='/Badboy' element={<Badboy/>}></Route>
+          <Route path='/Clickboard' element={<Clickboard/>}></Route>
+          <Route path='/Focus' element={<Focus/>}></Route>
+          <Route path='/Keyboard' element={<Keyboard/>}></Route>
+          <Route path='/SubmitDetails' element={<SubmitDetails/>}></Route>
+          <Route path='/Expression' element={<Expression/>}></Route>
         </Routes>
       </BrowserRouter>
 
