@@ -12,10 +12,15 @@ import Error from './components/Error'
 import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [NameId, setNameId] = useState("Rakibul Alam Tanveen")
+  const ChangeName=()=>{
+    setNameId("Estiak Ahamed")
+  }
 
   return (
     <>
+    <p>Hi my name is {NameId}</p>
+    <button className='btn btn-primary' onClick={ChangeName}>Click Me To Change</button>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Navbar/>}></Route>
