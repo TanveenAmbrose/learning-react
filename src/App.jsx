@@ -8,6 +8,7 @@ import Keyboard from './components/Keyboard'
 import DateAndTime from './components/DateAndTime'
 import SubmitDetails from './components/SubmitDetails'
 import Expression from './components/Expression'
+import Error from './components/Error'
 import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/Keyboard' element={<Keyboard/>}></Route>
           <Route path='/SubmitDetails' element={<SubmitDetails/>}></Route>
           <Route path='/Expression' element={<Expression/>}></Route>
+          <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>
 
