@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router';
 
 export class Navbar extends Component {
   render() {
@@ -14,32 +15,42 @@ export class Navbar extends Component {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
+        <li><Link to="/">Home</Link></li>
         <li>
           <a>Parent</a>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><Link to="/mode">Mode</Link></li>
+            <li><Link to="/DateAndTime">DateAndTime</Link></li>
+            <li><Link to="/Badboy">Badboy</Link></li>
+            <li><Link to="/Clickboard">Clickboard</Link></li>
+            <li><Link to="/Focus">Focus</Link></li>
+            <li><Link to="/SubmitDetails">SubmitDetails</Link></li>
+            <li><Link to="/Expression">Expression</Link></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
+        <li><Link to="/Keyboard">Keyboard</Link></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+      <li><Link to="/">Home</Link></li>
       <li>
         <details>
           <summary>Parent</summary>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><Link to="/mode">Mode</Link></li>
+            <li><Link to="/DateAndTime">DateAndTime</Link></li>
+            <li><Link to="/Badboy">Badboy</Link></li>
+            <li><Link to="/Clickboard">Clickboard</Link></li>
+            <li><Link to="/Focus">Focus</Link></li>
+            <li><Link to="/SubmitDetails">SubmitDetails</Link></li>
+            <li><Link to="/Expression">Expression</Link></li>
           </ul>
         </details>
       </li>
-      <li><a>Item 3</a></li>
+      <li><Link to="/Keyboard">Keyboard</Link></li>
     </ul>
   </div>
   <div className="navbar-end">

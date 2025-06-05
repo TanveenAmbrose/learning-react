@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router';
+import Navbar from './Navbar';
 
 export default class DateAndTime extends Component {
     FormChange =(event)=>{
@@ -6,7 +8,11 @@ export default class DateAndTime extends Component {
     }
   render() {
     return (
-      <div><br /><br />
+      <>
+      <Navbar/>
+      <div>
+        
+        <br /><br />
         <input type="date" name="CreationDate" onChange={this.FormChange} className="form-control"/><br /><br />
         <textarea name="About" onChange={this.FormChange} placeholder='Tell Me About Yourself'></textarea><br /><br />
         <input type="radio" value="Male" name="gender" onChange={this.FormChange} />
@@ -14,6 +20,7 @@ export default class DateAndTime extends Component {
         <input type="radio" value="FeMale"  name="gender" onChange={this.FormChange} />
         <label htmlFor="gender">Female</label>
       </div>
+      </>
     )
   }
 }

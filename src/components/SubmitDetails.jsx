@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navbar from './Navbar';
 
 export default class SubmitDetails extends Component {
   state ={
@@ -25,6 +26,7 @@ export default class SubmitDetails extends Component {
     const {FullName,Age,BirthDate,Department,CheckBox,Gender} = this.state
     return (
       <div>
+        <Navbar/>
         <input type="text" placeholder='Enter Your Full Name' name='FullName' className='input text-center flex justify-center' value={FullName} onChange={this.FormChange}/><br />
 
         <input type="number" placeholder='Enter Your Age'

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router';
+import Navbar from './Navbar';
 
 function Clickboard() {
     const CopyText = ()=>{
@@ -9,10 +11,13 @@ function Clickboard() {
         console.log("Text Cut successfully");
     }
   return (
+    <>
+    <Navbar/>
     <div>
       <p onCopy={CopyText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, non!</p>
       <h3 onCut={CutText}>Lorem ipsum dolor sit amet.</h3>
     </div>
+    </>
   )
 }
 

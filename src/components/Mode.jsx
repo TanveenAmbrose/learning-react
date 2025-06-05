@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router';
+import Navbar from './Navbar';
+
 
 export class Mode extends Component {
   render() {
     return (
     <>
+    <Navbar/>
     <label className="swap swap-rotate">
   {/* this hidden checkbox controls the state */}
   <input type="checkbox" className="theme-controller" value="synthwave" />

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router';
+import Navbar from './Navbar';
 
 function Keyboard() {
     const onKeyDownText =()=>{
@@ -11,12 +13,17 @@ function Keyboard() {
         console.log("Key Pressed");
     }
   return (
-    <div><br /><br />
+    <>
+     <Navbar/>
+    <div>
+     
+      <br /><br />
     <h1 className='text-xl'>KeyBoard</h1>
        <input type="text" onKeyDown={onKeyDownText}/> <br /><br />
        <input type="text" onKeyUp={onKeyUpText}/> <br /> <br /> 
        <input type="text" onKeyPress={onKeyPressText}/>                                  
     </div>
+    </>
   )
 }
 
