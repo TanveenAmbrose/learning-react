@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router';
+import { NavLink,Link } from 'react-router';
+import "./active.css"
 
 export class Navbar extends Component {
   render() {
@@ -15,42 +16,42 @@ export class Navbar extends Component {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><Link to="/">Home</Link></li>
+        <li><NavLink to="/">Home</NavLink></li>
         <li>
           <a>Parent</a>
           <ul className="p-2">
-            <li><Link to="/mode">Mode</Link></li>
-            <li><Link to="/DateAndTime">DateAndTime</Link></li>
-            <li><Link to="/Badboy">Badboy</Link></li>
-            <li><Link to="/Clickboard">Clickboard</Link></li>
-            <li><Link to="/Focus">Focus</Link></li>
-            <li><Link to="/SubmitDetails">SubmitDetails</Link></li>
-            <li><Link to="/Expression">Expression</Link></li>
+            <li><NavLink to="/mode">Mode</NavLink></li>
+            <li><NavLink to="/DateAndTime">DateAndTime</NavLink></li>
+            <li><NavLink to="/Badboy">Badboy</NavLink></li>
+            <li><NavLink to="/Clickboard">Clickboard</NavLink></li>
+            <li><NavLink to="/Focus">Focus</NavLink></li>
+            <li><NavLink to="/SubmitDetails">SubmitDetails</NavLink></li>
+            <li><NavLink to="/Expression">Expression</NavLink></li>
           </ul>
         </li>
-        <li><Link to="/Keyboard">Keyboard</Link></li>
+        <li><NavLink to="/Keyboard">Keyboard</NavLink></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><Link to="/">Home</Link></li>
+      <li><NavLink to="/">Home</NavLink></li>
       <li>
         <details>
           <summary>Parent</summary>
           <ul className="p-2">
-            <li><Link to="/mode">Mode</Link></li>
-            <li><Link to="/DateAndTime">DateAndTime</Link></li>
-            <li><Link to="/Badboy">Badboy</Link></li>
-            <li><Link to="/Clickboard">Clickboard</Link></li>
-            <li><Link to="/Focus">Focus</Link></li>
-            <li><Link to="/SubmitDetails">SubmitDetails</Link></li>
-            <li><Link to="/Expression">Expression</Link></li>
+            <li><NavLink to="/mode">Mode</NavLink></li>
+            <li><NavLink to="/DateAndTime">DateAndTime</NavLink></li>
+            <li><NavLink to="/Badboy">Badboy</NavLink></li>
+            <li><NavLink to="/Clickboard">Clickboard</NavLink></li>
+            <li><NavLink to="/Focus">Focus</NavLink></li>
+            <li><NavLink to="/SubmitDetails">SubmitDetails</NavLink></li>
+            <li><NavLink to="/Expression">Expression</NavLink></li>
           </ul>
         </details>
       </li>
-      <li><Link to="/Keyboard">Keyboard</Link></li>
+      <li><NavLink to="/Keyboard">Keyboard</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
