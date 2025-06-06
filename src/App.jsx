@@ -12,12 +12,15 @@ import Expression from './components/Expression'
 import Error from './components/Error'
 import Form from './components/Form'
 import { BrowserRouter, Routes, Route, } from "react-router";
+import MyChild from './components/MyChild'
 
 function App() {
   const [NameId, setNameId] = useState("Rakibul Alam Tanveen")
   const ChangeName=()=>{
     setNameId("Estiak Ahamed")
   }
+
+  const ParentData= "Hi i am his father";
 
   return (
     <>
@@ -35,9 +38,13 @@ function App() {
           <Route path='/SubmitDetails' element={<SubmitDetails/>}></Route>
           <Route path='/Expression' element={<Expression/>}></Route>
           <Route path='/Form' element={<Form/>}></Route>
+          <Route path='/mychild' element={<MyChild/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>
+
+
+      <MyChild title={ParentData}/>
 
       
     </>
