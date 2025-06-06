@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Navbar'
 import Mode from './components/mode'
 import Badboy from './components/Badboy'
@@ -9,7 +10,8 @@ import DateAndTime from './components/DateAndTime'
 import SubmitDetails from './components/SubmitDetails'
 import Expression from './components/Expression'
 import Error from './components/Error'
-import { BrowserRouter, Routes, Route } from "react-router";
+import Form from './components/Form'
+import { BrowserRouter, Routes, Route, } from "react-router";
 
 function App() {
   const [NameId, setNameId] = useState("Rakibul Alam Tanveen")
@@ -32,6 +34,7 @@ function App() {
           <Route path='/Keyboard' element={<Keyboard/>}></Route>
           <Route path='/SubmitDetails' element={<SubmitDetails/>}></Route>
           <Route path='/Expression' element={<Expression/>}></Route>
+          <Route path='/Form' element={<Form/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>

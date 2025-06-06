@@ -27,6 +27,7 @@ export class Navbar extends Component {
             <li><NavLink to="/Focus">Focus</NavLink></li>
             <li><NavLink to="/SubmitDetails">SubmitDetails</NavLink></li>
             <li><NavLink to="/Expression">Expression</NavLink></li>
+            <li><NavLink to="/Form">Form</NavLink></li>
           </ul>
         </li>
         <li><NavLink to="/Keyboard">Keyboard</NavLink></li>
@@ -48,6 +49,7 @@ export class Navbar extends Component {
             <li><NavLink to="/Focus">Focus</NavLink></li>
             <li><NavLink to="/SubmitDetails">SubmitDetails</NavLink></li>
             <li><NavLink to="/Expression">Expression</NavLink></li>
+            <li><NavLink to="/Form">Form</NavLink></li>
           </ul>
         </details>
       </li>
