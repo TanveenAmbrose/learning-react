@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Navbar from './Navbar';
 
 function Form() {
     const [name, setName] = useState("");
@@ -21,6 +22,7 @@ function Form() {
 
   return (
     <>
+    <Navbar/>
     <div className='container'>
         <h1 className='text-center'>Requiment Form</h1>
         <form action="" className='form' onSubmit={SubmitAll}>
