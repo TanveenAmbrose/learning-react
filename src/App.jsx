@@ -14,6 +14,7 @@ import Form from './components/Form'
 import { BrowserRouter, Routes, Route, } from "react-router";
 import MyChild from './components/MyChild'
 import AppHomeToggoler from './components/AppHomeToggoler'
+import UseEffect from './components/UseEffect'
 
 function App() {
   const [NameId, setNameId] = useState("Rakibul Alam Tanveen")
@@ -39,6 +40,7 @@ function App() {
           <Route path='/Form' element={<Form/>}></Route>
           <Route path='/mychild' element={<MyChild/>}></Route>
           <Route path='/toggoler' element={<AppHomeToggoler/>}></Route>
+          <Route path='/UseEffect' element={<UseEffect/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>

@@ -30,6 +30,7 @@ export class Navbar extends Component {
             <li><NavLink to="/Form">Form</NavLink></li>
             <li><NavLink to="/mychild">My child</NavLink></li>
             <li><NavLink to="/toggoler">Toggoler</NavLink></li>
+            <li><NavLink to="/UseEffect">UseEffect</NavLink></li>
           </ul>
         </li>
         <li><NavLink to="/Keyboard">Keyboard</NavLink></li>
@@ -54,6 +55,7 @@ export class Navbar extends Component {
             <li><NavLink to="/Form">Form</NavLink></li>
             <li><NavLink to="/mychild">My child</NavLink></li>
             <li><NavLink to="/toggoler">Toggoler</NavLink></li>
+            <li><NavLink to="/UseEffect">UseEffect</NavLink></li>
           </ul>
         </details>
       </li>
