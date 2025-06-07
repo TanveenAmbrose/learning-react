@@ -9,6 +9,7 @@ function UseEffect() {
             setCount(count + 1);
         },1000);
     })
+   
   return (
     <>
     <Navbar/>
