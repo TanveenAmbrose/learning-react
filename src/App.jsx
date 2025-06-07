@@ -15,6 +15,8 @@ import { BrowserRouter, Routes, Route, } from "react-router";
 import MyChild from './components/MyChild'
 import AppHomeToggoler from './components/AppHomeToggoler'
 import UseEffect from './components/UseEffect'
+import FetchData from './components/FetchData'
+import DataReturn from './components/DataReturn'
 
 function App() {
   const [NameId, setNameId] = useState("Rakibul Alam Tanveen")
@@ -41,6 +43,8 @@ function App() {
           <Route path='/mychild' element={<MyChild/>}></Route>
           <Route path='/toggoler' element={<AppHomeToggoler/>}></Route>
           <Route path='/UseEffect' element={<UseEffect/>}></Route>
+          <Route path='/FetchData' element={<FetchData/>}></Route>
+          <Route path='/DataReturn' element={<DataReturn/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>
