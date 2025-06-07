@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import DataReturn from './DataReturn';
 
-const FetchData =()=> {
+function FetchData() {
     const [saveData, setData]= useState(null);
     useEffect(()=>{
-        fetch("https://jsonplaceholder.typicode.com/users")
+        setTimeout(()=>{
+         fetch("https://jsonplaceholder.typicode.com/users")
         .then((res)=> res.json())
         .then((data)=> setData(data))
+        }, 1000)
     },[])
   return (
     <>
@@ -16,7 +18,7 @@ const FetchData =()=> {
         {saveData &&
             saveData.map((data)=>{
                 return <DataReturn name={data.name} email={data.email} id={data.id}
-                phone={data.phone}/>
+                phone={data.phone} street ={data.address.street}/>
             })
         }
     </div>

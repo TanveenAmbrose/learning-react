@@ -10,6 +10,7 @@ function DataReturn(props) {
         <p>{props.name}</p>
         <p>{props.email}</p>
         <p>{props.phone}</p>
+        <p>{props.street}</p>
     </div>
     </>
   )
