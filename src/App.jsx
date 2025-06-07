@@ -44,7 +44,6 @@ function App() {
           <Route path='/toggoler' element={<AppHomeToggoler/>}></Route>
           <Route path='/UseEffect' element={<UseEffect/>}></Route>
           <Route path='/FetchData' element={<FetchData/>}></Route>
-          <Route path='/DataReturn' element={<DataReturn/>}></Route>
           <Route path='*' element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>

@@ -32,7 +32,6 @@ export class Navbar extends Component {
             <li><NavLink to="/toggoler">Toggoler</NavLink></li>
             <li><NavLink to="/UseEffect">UseEffect</NavLink></li>
             <li><NavLink to="/FetchData">FetchData</NavLink></li>
-            <li><NavLink to="/DataReturn">DataReturn</NavLink></li>
           </ul>
         </li>
         <li><NavLink to="/Keyboard">Keyboard</NavLink></li>
@@ -59,7 +58,6 @@ export class Navbar extends Component {
             <li><NavLink to="/toggoler">Toggoler</NavLink></li>
             <li><NavLink to="/UseEffect">UseEffect</NavLink></li>
             <li><NavLink to="/FetchData">FetchData</NavLink></li>
-            <li><NavLink to="/DataReturn">DataReturn</NavLink></li>
           </ul>
         </details>
       </li>

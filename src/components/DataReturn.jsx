@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 
 
-const DataReturn=(props)=> {
+function DataReturn(props) {
   return (
     <>
     <div className="container text-center p-4 m-2 border-4 border-indigo-500">
