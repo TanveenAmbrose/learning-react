@@ -1,8 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
 
-
-function DataReturn(props) {
+const DataReturn=(props)=> {
   return (
     <>
     <div className="container text-center p-4 m-2 border-4 border-indigo-500">
@@ -10,10 +8,11 @@ function DataReturn(props) {
         <p>{props.name}</p>
         <p>{props.email}</p>
         <p>{props.phone}</p>
-        <p>{props.street}</p>
+        <p>{props.address.street}</p>
     </div>
     </>
-  )
+  );
 }
 
-export default DataReturn
+export default DataReturn;
+

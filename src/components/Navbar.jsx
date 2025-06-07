@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { NavLink,Link } from 'react-router';
 import "./active.css"
 
+
 export class Navbar extends Component {
   render() {
     return (
@@ -69,6 +70,7 @@ export class Navbar extends Component {
   </div>
 </div>
         </div>
+        
       </>
     )
   }

@@ -16,7 +16,8 @@ import MyChild from './components/MyChild'
 import AppHomeToggoler from './components/AppHomeToggoler'
 import UseEffect from './components/UseEffect'
 import FetchData from './components/FetchData'
-import DataReturn from './components/DataReturn'
+
+
 
 function App() {
   const [NameId, setNameId] = useState("Rakibul Alam Tanveen")
@@ -49,7 +50,7 @@ function App() {
       </BrowserRouter>
 
 
-      
+     
 
       
     </>
