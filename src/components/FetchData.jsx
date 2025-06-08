@@ -1,31 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './Navbar'
-import DataReturn from './DataReturn';
+import DataReturn from './DataReturn'
+import Navbar from './Navbar';
 
-
-const FetchData=()=> {
-    const [SaveData, SetData]= useState(null);
-    
+function FetchData() {
+    const [saveData, setData] = useState(null);
     useEffect(()=>{
         setTimeout(()=>{
-         fetch("https://jsonplaceholder.typicode.com/users")
-        .then((res)=> res.json())
-        .then((data)=> SetData(data))
-        }, 1000)
+            fetch("https://jsonplaceholder.typicode.com/users")
+            .then((res)=>res.json())
+            .then((data)=>setData(data))
+        },1000)
     },[])
-   
   return (
-    <>
-    <Navbar/>
-    <div className="container">
-        {SaveData &&
-            SaveData.map((data)=>{
-                return <DataReturn name={data.name} email={data.email} id={data.id}
-                phone={data.phone} street ={data.address.street}/>
-            })
-        }
+    <div>
+        <Navbar/>
+    {
+        saveData &&
+        saveData.map((data)=>{
+           return <DataReturn name={data.name} email={data.email} id={data.id} street={data.address.street}/>
+        })
+    }
     </div>
-    </>
   )
 }
 
